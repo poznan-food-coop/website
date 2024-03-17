@@ -1,5 +1,7 @@
 # Strona Poznańskiej Koooperatywy Spożywczej
 
+[![Deploy to GitHub Pages](https://github.com/poznan-food-coop/website/actions/workflows/build.yml/badge.svg)](https://github.com/poznan-food-coop/website/actions/workflows/build.yml)
+
 ## O projekcie
 
 Strona została stworzona z wykorzystaniem frameworków [Vue.js](https://vuejs.org/) oraz [Vuetify](https://vuetifyjs.com/).
