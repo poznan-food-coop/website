@@ -13,7 +13,6 @@ declare module 'vue' {
     CenterCard: typeof import('./src/components/CenterCard.vue')['default']
     ChallengesForCooperators: typeof import('./src/components/index/ChallengesForCooperators.vue')['default']
     ChallengesForSuppliers: typeof import('./src/components/index/ChallengesForSuppliers.vue')['default']
-    copy: typeof import('./src/components/CenterCard copy.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     HowToJoin: typeof import('./src/components/index/HowToJoin.vue')['default']
     ImagesSlider: typeof import('./src/components/ImagesSlider.vue')['default']

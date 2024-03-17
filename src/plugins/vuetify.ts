@@ -12,7 +12,6 @@ const LightTheme = {
     'primary-darken': '#2E7D32',
     secondary: '#ee5e1f',
     'secondary-darken': '#a5461a',
-    error: '#000000',
   },
 }
 

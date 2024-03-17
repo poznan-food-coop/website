@@ -85,7 +85,8 @@ const submit = async () => {
           label="Imię i nazwisko"
           v-model="name"
           :rules="[nameRules]"
-          variant="solo"
+          variant="outlined"
+          class="mb-2"
           required
         ></v-text-field>
         <v-text-field
@@ -93,7 +94,8 @@ const submit = async () => {
           type="email"
           v-model="email"
           :rules="[emailRules]"
-          variant="solo"
+          variant="outlined"
+          class="mb-2"
           required
         ></v-text-field>
         <v-btn class="bg-secondary" size="x-large" type="submit" @click="submit"
@@ -109,9 +111,17 @@ const submit = async () => {
   top: 0;
   left: 0;
   right: 0;
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
   z-index: 2000;
   margin-top: 10px;
+}
+</style>
+<style>
+.v-input--error:not(.v-input--disabled) .v-input__details .v-messages {
+  color: white !important;
+}
+.v-field--error:not(.v-field--disabled) .v-label.v-field-label {
+  color: white !important;
 }
 </style>
