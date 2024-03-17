@@ -23,6 +23,11 @@ const buttons: SocialButton[] = [
     icon: "mdi-youtube",
     link: "https://www.youtube.com/@poznanskakooperatywaspozyw6407",
   },
+  {
+    name: "GitHub",
+    icon: "mdi-github",
+    link: "https://github.com/poznan-food-coop",
+  },
 ];
 </script>
 <template>
@@ -30,7 +35,7 @@ const buttons: SocialButton[] = [
     <div class="d-flex w-100 justify-center align-center">
       <LogoWithText color="background" />
       <div class="ml-5">
-        <div class="d-flex justify-center font-weight-bold">
+        <div class="d-flex justify-center font-weight-bold mb-2">
           Znajdziesz nas na:
         </div>
         <v-btn
