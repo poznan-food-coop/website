@@ -6,4 +6,5 @@
   <BenefitsForCooperators />
   <ChallengesForSuppliers />
   <BenefitsForSuppliers />
+  <HowToJoin />
 </template>

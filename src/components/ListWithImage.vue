@@ -13,8 +13,13 @@ defineProps<{
 </script>
 
 <template>
-  <div class="d-flex flex-row" :class="[`bg-${backgroundColor}`]">
-    <div v-if="imagePosition === 'left'" class="w-50 d-inline-block">
+  <div
+    class="d-flex flex-row"
+    :class="`bg-${backgroundColor} ${
+      imagePosition === 'left' ? 'flex-row-reverse' : 'flex-row'
+    }`"
+  >
+    <div class="w-50 d-inline-block">
       <v-img aspect-ratio="1" cover :src="image" />
     </div>
     <div class="w-50 d-inline-block ma-10">
@@ -32,9 +37,6 @@ defineProps<{
           {{ item.text }}</v-list-item
         >
       </v-list>
-    </div>
-    <div v-if="imagePosition === 'right'" class="w-50 d-inline-block">
-      <v-img aspect-ratio="1" cover :src="image" />
     </div>
   </div>
 </template>
