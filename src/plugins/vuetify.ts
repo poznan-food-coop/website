@@ -12,14 +12,15 @@ const LightTheme = {
     'primary-darken': '#2E7D32',
     secondary: '#ee5e1f',
     'secondary-darken': '#a5461a',
+    error: '#000000',
   },
 }
 
 export default createVuetify({
   theme: {
-    defaultTheme: 'myCustomLightTheme',
+    defaultTheme: 'LightTheme',
     themes: {
-      myCustomLightTheme: LightTheme,
+      LightTheme: LightTheme,
     },
   },
 })

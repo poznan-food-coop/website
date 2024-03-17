@@ -7,4 +7,5 @@
   <ChallengesForSuppliers />
   <BenefitsForSuppliers />
   <HowToJoin />
+  <Newsletter />
 </template>

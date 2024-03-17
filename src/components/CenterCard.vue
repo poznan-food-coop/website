@@ -18,7 +18,7 @@ defineProps<{
     <v-card variant="text" max-width="800">
       <TwoColorTitle :titleFirst="titleFirst" :titleSecond="titleSecond" />
       <p class="text-primary-darken text-h5 my-4">{{ text }}</p>
-      <v-btn size="x-large" rounded="lg" color="secondary" :to="actionLink">{{
+      <v-btn size="x-large" color="secondary" :to="actionLink">{{
         actionText
       }}</v-btn>
     </v-card>
