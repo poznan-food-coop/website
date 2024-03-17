@@ -57,23 +57,26 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 const LightTheme = {
-dark: false,
-colors: {
+  dark: false,
+  colors: {
     background: '#FFFFFF',
     'background-darken': '#F5F5F5',
     primary: '#4CAF50',
     'primary-darken': '#2E7D32',
-},
+    secondary: '#ee5e1f',
+    'secondary-darken': '#a5461a',
+  },
 }
 
 export default createVuetify({
-theme: {
-    defaultTheme: 'myCustomLightTheme',
+  theme: {
+    defaultTheme: 'LightTheme',
     themes: {
-    myCustomLightTheme: LightTheme,
+      LightTheme: LightTheme,
     },
-},
+  },
 })
+
 ```
 
 ## Licencja
