@@ -10,23 +10,27 @@ W projekcie znajdują się dwie główne gałęzie: `master` oraz `develop`. W g
 
 ### Instalacja w środowisku deweloperskim
 
-    1. Sklonuj repozytorium na swój komputer
-    ```bash
+1. Sklonuj repozytorium na swój komputer
+
+    ``` bash
     git clone git@github.com:poznan-food-coop/website.git
     ```
 
-    2. Przejdź do katalogu z projektem
-    ```bash
+2. Przejdź do katalogu z projektem
+
+    ``` bash
     cd website
     ```
 
-    3. Zainstaluj zależności
-    ```bash
+3. Zainstaluj zależności
+
+    ``` bash
     npm install
     ```
 
-    4. Uruchom serwer deweloperski
-    ```bash
+4. Uruchom serwer deweloperski
+
+    ``` bash
     npm run dev
     ```
 
@@ -43,32 +47,32 @@ Zachęcam również do zgłaszania problemów oraz propozycji zmian, najlepiej w
 
 Dla zachowania spójności wizualnej strony używamy jednej palety kolorów która jest zdefiniowana w pliku `src/plugins/vuetify.js`. Wszystkie kolory używane w projekcie powinny być zdefiniowane w tej palecie. Zmieniając kolory w palecie, zmieniamy je w całym projekcie.
 
-    ```javascript
-    // src/plugins/vuetify.js
-    import '@mdi/font/css/materialdesignicons.css'
-    import 'vuetify/styles'
+```javascript
+// src/plugins/vuetify.js
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
 
-    import { createVuetify } from 'vuetify'
+import { createVuetify } from 'vuetify'
 
-    const LightTheme = {
-    dark: false,
-    colors: {
-        background: '#FFFFFF',
-        'background-darken': '#F5F5F5',
-        primary: '#4CAF50',
-        'primary-darken': '#2E7D32',
+const LightTheme = {
+dark: false,
+colors: {
+    background: '#FFFFFF',
+    'background-darken': '#F5F5F5',
+    primary: '#4CAF50',
+    'primary-darken': '#2E7D32',
+},
+}
+
+export default createVuetify({
+theme: {
+    defaultTheme: 'myCustomLightTheme',
+    themes: {
+    myCustomLightTheme: LightTheme,
     },
-    }
-
-    export default createVuetify({
-    theme: {
-        defaultTheme: 'myCustomLightTheme',
-        themes: {
-        myCustomLightTheme: LightTheme,
-        },
-    },
-    })
-    ```
+},
+})
+```
 
 ## Licencja
 
